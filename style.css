@@ -1,5 +1,11 @@
+/** Elements **/
+
 * {
   font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.9);
 }
 
 body {
@@ -36,13 +42,6 @@ textarea {
   border-radius: 5px;
 }
 
-input:focus, textarea:focus {
-  border-width: 1px;
-  border-color: grey;
-  border-style: dashed;
-  outline:none;
-}
-
 input {
   height: 20px;
   width: 100%;
@@ -54,20 +53,42 @@ input {
   border-radius: 5px;
 }
 
-button {
-  font-weight: bold;
-  color: white;
-  height: 40px;
-  width: 80px;
-  background-color: #36A174;
-  margin: 0 auto;
-  border-style: none;
-  border-radius: 5px;
+input:focus, textarea:focus {
+  border-width: 1px;
+  border-color: grey;
+  border-style: dashed;
+  outline:none;
 }
 
-button:hover {
-  background-color: black;
+blockquote {
+  color: grey;
+  line-height: 2em;
 }
+
+/** Class **/
+
+  /** Header **/
+
+.header {
+  height: 100px;
+}
+
+.header img {
+  float: left;
+  display: block;
+  margin: 10px;
+  padding-right: 2%;
+}
+
+.header, .footer {
+  width: 100%;
+  padding: 4%;
+  padding-top: 2%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+  /** Body **/
 
 .wrapper {
   position: relative;
@@ -82,44 +103,6 @@ button:hover {
   padding-top: 2%;
 }
 
-.header {
-  height: 100px;
-}
-
-.header img {
-  display: block;
-  margin: 10px;
-  padding-right: 2%;
-}
-
-.header, .footer {
-  width: 100%;
-  padding: 4%;
-  padding-top: 2%;
-  margin: 0 auto;
-  background-color: white;
-}
-
-.footer {
-  float: left;
-  padding-left: 0;
-  height: 50px;
-}
-
-.content {
-  padding-left: 8%;
-}
-
-.content a {
-  text-transform: capitalize;
-  color: #292C33;
-  text-decoration: none;
-}
-
-.content a:hover {
-  color: #252941;
-}
-
 .spotlight {
   float: left;
   width: 300px;
@@ -129,16 +112,6 @@ button:hover {
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#aboutme {
-  width: 400px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 4%;
-  padding-top: 2%;
-  margin-bottom: 4%;
-  border-radius: 5px;
 }
 
 .spotlight img {
@@ -159,14 +132,55 @@ button:hover {
   transition: .5s ease;
 }
 
-h1 {
-  color: rgba(0, 0, 0, 0.9);
+.content {
+  padding-left: 8%;
+}
+
+.content a {
+  text-transform: capitalize;
+  color: #292C33;
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: #252941;
+}
+
+  /** Footer **/
+
+.footer {
+  float: left;
+  padding-left: 0;
+  height: 50px;
 }
 
 .footer h1, .projects h1 {
   text-align: center;
 }
 
-.header img {
-  float: left;
+/** ids **/
+
+#aboutme {
+  width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 4%;
+  padding-top: 2%;
+  margin-bottom: 4%;
+  border-radius: 5px;
+}
+
+#button {
+  font-weight: bold;
+  color: white;
+  height: 40px;
+  width: 80px;
+  background-color: #36A174;
+  margin: 0 auto;
+  border-style: none;
+  border-radius: 5px;
+}
+
+#button:hover {
+  background-color: black;
 }
