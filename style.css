@@ -40,6 +40,7 @@ input:focus, textarea:focus {
   border-width: 1px;
   border-color: grey;
   border-style: dashed;
+  outline:none;
 }
 
 input {
@@ -130,21 +131,6 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#container1 {
-  margin-left: 50% auto;
-}
-
-#container2 {
-  margin-right: 50% auto;
-  margin-left: 50% auto;
-
-}
-
-#container3 {
-  margin-right: 50% auto;
-
-}
-
 #aboutme {
   width: 400px;
   margin: 0 auto;
@@ -153,10 +139,6 @@ button:hover {
   padding-top: 2%;
   margin-bottom: 4%;
   border-radius: 5px;
-}
-
-.projects h1 {
-  text-align: center;
 }
 
 .spotlight img {
@@ -181,7 +163,7 @@ h1 {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.footer h1 {
+.footer h1, .projects h1 {
   text-align: center;
 }
 
