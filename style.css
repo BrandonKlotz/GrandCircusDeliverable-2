@@ -55,6 +55,7 @@ body {
 }
 
 .spotlight {
+  display: table;
   float: left;
   width: 300px;
   margin: 4%;
