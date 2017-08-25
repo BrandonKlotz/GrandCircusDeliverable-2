@@ -8,23 +8,23 @@ body {
   background-color: rgba(251, 250, 252, 0.9);
 }
 
-#projects {
+.projects {
   margin: 0px;
   width: 100%;
   padding: 6%;
 }
 
-#about {
+.header {
   height: 100px;
 }
 
-#about img {
+.header img {
   display: block;
   margin: 10px;
   padding-right: 2%;
 }
 
-#about, #contact {
+.header, .footer {
   width: 100%;
   padding: 4%;
   padding-top: 2%;
@@ -32,7 +32,7 @@ body {
   background-color: white;
 }
 
-#contact {
+.footer {
   float: left;
   padding-left: 0;
   height: 50px;
@@ -87,15 +87,15 @@ h1 {
   color: rgba(0, 0, 0, 0.9);
 }
 
-#contact h1 {
+.footer h1 {
   text-align: center;
 }
 
-#projects h1 {
+.projects h1 {
   display: block;
   left: 60px;
 }
 
-#about img {
+.header img {
   float: left;
 }
