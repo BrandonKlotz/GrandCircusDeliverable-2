@@ -30,6 +30,8 @@ blockquote {
 }
 
 .header img {
+  height: 100px;
+  width: 100px;
   margin: 10px;
   float: left;
   display: block;
@@ -62,8 +64,7 @@ blockquote {
 
 .spotlight {
   margin: inherit;
-  width: 27.5%;
-  min-width: 350px;
+  width: 400px;
   margin: 2%;
   margin-bottom: 4%;
   border-radius: 5px;
@@ -79,6 +80,8 @@ blockquote {
   opacity: .8;
   transition: .5s ease;
   background-color: white;
+  height: 400px;
+  width: 400px;
 }
 
 .spotlight img:hover {
