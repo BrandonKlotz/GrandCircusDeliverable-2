@@ -39,7 +39,7 @@ li a {
 
 li a:hover {
   text-decoration: underline;
-  color: #36C774;
+  color: #36C774
 }
 
 a {
@@ -161,7 +161,7 @@ a {
   border-radius: 5px;
 }
 
-#button {
+#button, #riddleButton {
   font-weight: bold;
   color: white;
   height: 40px;
@@ -172,7 +172,7 @@ a {
   border-radius: 5px;
 }
 
-#button:hover {
+#button:hover, #riddleButton:hover {
   background-color: black;
 }
 
