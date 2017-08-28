@@ -4,13 +4,13 @@ var intense = "!!!!"
 
 function runRiddle() {
   if (document.getElementById('riddleAnswer').innerHTML('correctAnswer') == true) {
-    document.alert("You got it right" + 'intense');
+    document.getElementById('riddleResponder').innerHTML.append("You got it right" + 'intense');
   }
   else if (document.getElementById('riddleAnswer').innerHTML('correctAnswer') == false) {
-    document.alert("Try again" + 'intense');
+    document.getElementById('riddleResponder').innerHTML.append("Try again" + 'intense');
   }
   else (document.getElementById('riddleAnswer').innerHTML('null') == true) {
-    document.alert("Hey there was nothing there" + 'intense');
+    document.getElementById('riddleResponder').innerHTML.append("Hey there was nothing there" + 'intense');
     return;
   }
 }
