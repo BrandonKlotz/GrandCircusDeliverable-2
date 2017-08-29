@@ -28,11 +28,19 @@
 
         <h1 id="form">Do you like riddles?</h1>
         <form id="riddle">
-          <script src="script.js"></script>
           <h4>Give it a shot.</h4>
           <p>What belongs to <em>you</em> but others use it way more than you do?</p>
             <input id="userAnswer" placeholder="Type your answer" type="text" tabindex="1">
-            <button onclick="myFunction() ">Submit</button>
+            <button onclick="createParagraph() ">Submit</button>
+            <script src="script.js">
+
+              function createParagraph() {
+                var para = document.createElement('p');
+                para.textContent = 'You clicked the button!';
+                document.body.appendChild(para);
+              }
+
+            </script>
           </fieldset>
         </form>
 
