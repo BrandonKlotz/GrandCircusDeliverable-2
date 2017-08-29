@@ -1,6 +1,6 @@
 var button = document.querySelector('button');
 var correctAnswer = "your name";
-var userInput = document.querySelector('promt.value');
+var userInput = document.querySelector('prompt.value');
 
 button.onclick = function() {
   var name = prompt('What is the answer?');
