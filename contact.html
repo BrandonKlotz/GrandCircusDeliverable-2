@@ -5,6 +5,7 @@
     <title>Brandon Klotz</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -27,28 +28,10 @@
       <div class="projects">
 
         <h1 id="form">Do you like riddles?</h1>
-        <form id="riddle">
+        <form>
           <h4>Give it a shot.</h4>
           <p>What belongs to <em>you</em> but others use it way more than you do?</p>
-            <button onclick="function() ">Try</button>
-            <script>
-
-            var button = document.querySelector('button');
-            var correctAnswer = "your name";
-            var userInput = document.querySelector('promt.value');
-
-            button.onclick = function() {
-              var name = prompt('What is the answer');
-              if (userInput == correctAnswer){
-                alert(name + ' is correct! Good Job!');
-              }
-              else {
-                alert(name + ' is a good guess! Try again!');
-              }
-            }
-
-            </script>
-          </fieldset>
+            <button onclick="riddle() ">Try</button>
         </form>
 
       </div>
