@@ -161,7 +161,7 @@ a {
   border-radius: 5px;
 }
 
-#button, #riddleButton {
+#button {
   font-weight: bold;
   color: white;
   height: 40px;
@@ -172,8 +172,13 @@ a {
   border-radius: 5px;
 }
 
-#button:hover, #riddleButton:hover {
+#button:hover {
   background-color: black;
+}
+
+#riddleResponder {
+  color: #36A174;
+  font-weight: bold;
 }
 
 /** Form CSS **/
@@ -186,11 +191,6 @@ form {
   padding-top: 2%;
   margin-bottom: 4%;
   border-radius: 5px;
-}
-
-fieldset {
-	border: medium none !important;
-	margin: 0 0 10px;
 }
 
 textarea {
@@ -209,6 +209,7 @@ input {
   height: 20px;
   width: 100%;
   padding: 2%;
+  margin: 0 0 2em;
   resize:none;
   border-style: solid;
   border-width: 1px;

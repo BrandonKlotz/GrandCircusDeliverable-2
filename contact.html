@@ -5,7 +5,6 @@
     <title>Brandon Klotz</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <script src="riddle.js"></script>
   </head>
 
   <body>
@@ -28,17 +27,14 @@
       <div class="projects">
 
         <h1 id="form">Do you like riddles?</h1>
-        <form>
+        <form id="riddle">
+          <script src="script.js"></script>
           <h4>Give it a shot.</h4>
           <p>What belongs to <em>you</em> but others use it way more than you do?</p>
-          <fieldset>
-            <input id="riddleAnswer" placeholder="Type your answer" type="text" name="answer" value"answer">
-          </fieldset>
-          <fieldset>
-            <button id="riddleButton" onclick="runRiddle()" type="submit" name="submit" value"Submit">Submit</button>
+            <input id="userAnswer" placeholder="Type your answer" type="text" tabindex="1">
+            <button onclick="createParagraph() ">Submit</button>
           </fieldset>
         </form>
-        <p><span id="riddleResponder"></span></p>
 
       </div>
 
@@ -47,24 +43,12 @@
         <h1 id="form">Lets get in touch.</h1>
         <form action="mail.php" method="post" >
           <h4>I look forward to hearing from you!</h4>
-          <fieldset>
-            <input placeholder="Your Name" type="text" name="name" tabindex="1" autofocus>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Email Address" type="email" name="email" tabindex="2">
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Phone Number" type="tel" name="number" tabindex="3">
-          </fieldset>
-          <fieldset>
-            <input placeholder="Want to show me your project?" type="url" name="website" tabindex="4">
-          </fieldset>
-          <fieldset>
-            <textarea placeholder="Tell me about yourself!" name="message" tabindex="5"></textarea>
-          </fieldset>
-          <fieldset>
+            <input placeholder="Your Name" type="text" name="name" tabindex="2">
+            <input placeholder="Your Email Address" type="email" name="email" tabindex="3">
+            <input placeholder="Your Phone Number" type="tel" name="number" tabindex="4">
+            <input placeholder="Want to show me your project?" type="url" name="website" tabindex="5">
+            <textarea placeholder="Tell me about yourself!" name="message" tabindex="6"></textarea>
             <input id="button" type="submit" name="submit" value"Send">
-          </fieldset>
         </form>
 
       </div>
