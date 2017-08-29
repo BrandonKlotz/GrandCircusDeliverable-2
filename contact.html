@@ -31,28 +31,14 @@
           <h4>Give it a shot.</h4>
           <p>What belongs to <em>you</em> but others use it way more than you do?</p>
             <input id="userAnswer" placeholder="Type your answer" type="text" tabindex="1">
-            <button onclick="createParagraph() ">Submit</button>
+            <button onclick="function() ">Submit</button>
             <script>
 
-            // Function: creates a new paragraph and append it to the bottom of the HTML body.
+            var button = document.querySelector('button');
 
-            function createParagraph() {
-            var para = document.createElement('p');
-            para.textContent = 'You clicked the button!';
-            document.body.appendChild(para);
-            }
-
-            /*
-            1. Get references to all the buttons on the page and sort them in an array.
-            2. Loop through all the buttons and add a click event listener to each one.
-
-            When any button is pressed, the createParagraph() function will be run.
-            */
-
-            var buttons = document.querySelectorAll('button');
-
-            for (var i = 0; i < buttons.length ; i++) {
-            buttons[i].addEventListener('click', createParagraph);
+            button.onclick = function() {
+              var name = prompt('What is your name?');
+              alert('Hello ' + name + ', nice to see you!');
             }
 
             </script>
