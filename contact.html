@@ -34,10 +34,17 @@
             <script>
 
             var button = document.querySelector('button');
+            var correctAnswer = "your name";
+            var userInput = document.querySelector('promt.value');
 
             button.onclick = function() {
-              var name = prompt('What is your name?');
-              alert('Hello ' + name + ', nice to see you!');
+              var name = prompt('What is the answer');
+              if (userInput == correctAnswer){
+                alert(name + ' is correct! Good Job!');
+              }
+              else {
+                alert(name + ' is a good guess! Try again!');
+              }
             }
 
             </script>
