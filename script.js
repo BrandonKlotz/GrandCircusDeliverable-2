@@ -1,13 +1,12 @@
 var button = document.querySelector('button');
-var correctAnswer = "your name";
-var userInput = document.querySelector('prompt.value');
+var userInput = document.querySelector('prompt') = "your name";
 
-button.onclick = function() {
+button.onclick = riddle() {
   var name = prompt('What is the answer?');
-  if (userInput == correctAnswer){
-    alert(name.value + ' is correct! Good Job!!');
+  if (document.getElementsByName('prompt') == "Your name"){
+    alert(name.value + ' is right!!');
   }
   else {
-    alert(nane.value + ' is a good guess! Try again!!');
+    alert(name.value + ' is a good guess! Try again!!');
   }
 }
