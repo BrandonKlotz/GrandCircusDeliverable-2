@@ -183,7 +183,7 @@ a {
 
 /** Form CSS **/
 
-form {
+form, #riddleSpace {
   width: 400px;
   margin: 0 auto;
   background-color: white;
