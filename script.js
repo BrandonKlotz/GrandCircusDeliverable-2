@@ -6,12 +6,15 @@ function riddle() {
   switch (userInput) {
     case correctAnswer:
       text = userInput + ' is right! GOOD Job!';
+      document.getElementById("responder").style.color = "green";
       break;
       case correctAnswerTwo:
         text = userInput + ' is right! GOOD Job!';
+        document.getElementById("responder").style.color = "green";
         break;
     default:
       text = userInput + ' is not correct, try again..';
+      document.getElementById("responder").style.color = "red";
       break;
   }
   document.getElementById("responder").innerHTML = text;
