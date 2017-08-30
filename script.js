@@ -1,12 +1,13 @@
-var button = document.querySelector('button');
-var userInput = document.querySelector('prompt') = "your name";
+var correctAnswer = "your name";
+var button = document.getElementsByTagName('button');
+var userInput = document.querySelector('prompt');
 
-button.onclick = riddle() {
-  var name = prompt('What is the answer?');
-  if (document.getElementsByName('prompt') == "Your name"){
-    alert(name.value + ' is right!!');
-  }
+function riddle() {
+  var para = document.getElementById('answer');
+  para.addEventListener('click', riddle);
+  prompt('What is the answer?');
+  if (userInput = correctAnswer){
+    alert(prompt.value + ' is right! GOOD Job!');}
   else {
-    alert(name.value + ' is a good guess! Try again!!');
-  }
+    alert(prompt.value + ' is a good guess! Try again!!');}
 }
