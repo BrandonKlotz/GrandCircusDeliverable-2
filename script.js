@@ -1,12 +1,13 @@
+
+var correctAnswer = "your name";
+var button = document.getElementsByTagName('button');
+var userInput = prompt('What is the answer?');
+
 function riddle() {
-  var text;
-  var answer = prompt("What's your guess?");
-  switch(answer) {
-    case "your name":
-        text = " is right! Good Job";
-        break;
-    default:
-        text = 'answer' + " is not correct. Try again..";
-        break;
-      }     
+  var para = document.getElementById('answer');
+  para.addEventListener('click', riddle);
+  if (userInput = correctAnswer){
+    alert(prompt.value + ' is right! GOOD Job!');}
+  else {
+    alert(prompt.value + ' is a good guess! Try again!!');}
 }
