@@ -8,10 +8,14 @@ function riddle() {
       text = userInput + ' is right! GOOD Job!';
       document.getElementById("responder").style.color = "green";
       break;
-      case correctAnswerTwo:
-        text = userInput + ' is right! GOOD Job!';
-        document.getElementById("responder").style.color = "green";
-        break;
+    case correctAnswerTwo:
+      text = userInput + ' is right! GOOD Job!';
+      document.getElementById("responder").style.color = "green";
+      break;
+    case null:
+      text = 'Please enter a guess.';
+      document.getElementById("responder").style.color = "red";
+      break;
     default:
       text = userInput + ' is not correct, try again..';
       document.getElementById("responder").style.color = "red";
