@@ -1,7 +1,7 @@
 function riddle() {
   var text;
   var correctAnswer = "your name";
-    var correctAnswerTwo = "Your name";
+  var correctAnswerTwo = "Your name";
   var userInput = prompt('What is the answer?');
   switch (userInput) {
     case correctAnswer:
@@ -12,7 +12,7 @@ function riddle() {
       text = userInput + ' is right! GOOD Job!';
       document.getElementById("responder").style.color = "green";
       break;
-    case null:
+    case "":
       text = 'Please enter a guess.';
       document.getElementById("responder").style.color = "red";
       break;
