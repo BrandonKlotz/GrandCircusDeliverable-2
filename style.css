@@ -4,7 +4,13 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+@font-face {
+  font-family: 'GoodDog';
+  src: url('fonts/GoodDog.otf')
+}
+
 h1 {
+  font-family: 'GoodDog', sans-serif;
   color: rgba(0, 0, 0, 0.9);
 }
 
